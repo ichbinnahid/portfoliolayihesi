@@ -4,6 +4,9 @@
 
 @import url('reset.css');
 
+
+
+
 @font-face {
     font-family: 'roboto-black';
     src: url('../fonts/Roboto-Black.ttf');
@@ -218,8 +221,15 @@
 .container1{
     padding: 0;
 }
-    
-  
+    .container1 .header{
+ padding: 40px;
+    } 
+
+    .download-cv{
+        display: flex;
+        justify-content: center;
+        padding: 40px 0;
+    }
 }
 
 
@@ -241,7 +251,7 @@
         width: 80%;
     }
 
-    .right-side img {
+    .right-side  img {
         min-width: 300px;
     }
     
@@ -266,11 +276,21 @@ section.partners .trusted {
     display: flex;
 }
 
+
+.project-elements {
+    min-width: 320px;
+    
+}
+
+
+.project-elements > img {
+    width: 100%;
+}
 section.services {
-    max-width: 1300px;
+    /* max-width: 1300px; */
 display: flex;
 flex-direction: column;
-/* justify-content: ; */
+justify-content: center;
     padding: 0 8%;
 
 }
@@ -371,6 +391,8 @@ section.projects .project-elements{
     min-width: 300px;
 }
 
+
+
 section.projects .project-elements>.project-text {
     display: flex;
     max-width: 486px;
@@ -390,7 +412,7 @@ section.projects .project-elements>.project-text {
 
 section.projects .project-box {
     display: flex;
-    padding: 30px 10px;
+    padding: 30px 0;
     gap: 20px;
     justify-content: space-between;
 
@@ -420,6 +442,7 @@ section.projects .project-box {
     justify-content: center;
     padding: 0 10px;
 
+
 }
 
 .projectbutton-grups {
@@ -446,14 +469,14 @@ section.projects .project-box {
     max-width: 100%;
     background: #000;
     max-height: 1700px;
-    margin-top: -15%;
+    margin-top: -13%;
     
 }
 
 
 
 .black-container-size {
-    padding: 20% 8%;
+    padding: 15% 8%;
     display: flex;
 flex-wrap: wrap;
     justify-content: space-between;
@@ -535,6 +558,7 @@ padding-top: 71px;
 
 .black-right-side span:nth-child(2) {
     /* font-size: 28px; */
+
     font-size: 1.458vw;
     font-weight: 700;
     letter-spacing: 1px;
@@ -549,6 +573,7 @@ section.projects .project-line{
 }
 
 
+
     .black-right-side span:nth-child(2) {
         font-size: 30px;
         /* font-size: 1.458vw; */
@@ -560,8 +585,7 @@ section.projects .project-line{
   .black-right-side{
     min-width: 450px;
   }
-   
-  
+
 }
 .black-right-side span:nth-child(3) img {
     padding-left: 10px;
@@ -617,11 +641,12 @@ section.designer-product {
 }
 
 .designer-img img:nth-child(2){
-min-width:500px ;
+min-width:400px ;
 }
 
 
-section.education-work {
+.education-work {
+   
     padding: 0 8%;
     display: flex;
 
@@ -654,9 +679,7 @@ flex-wrap: wrap;
     gap: 15px;
     padding: 20px;
 }
-    section.education-work{
-        min-width: 768px;
-    }
+
     .edu-work-class {
         display: flex;
         /* padding: 0 8%; */
@@ -783,14 +806,14 @@ flex-wrap: wrap;
 
 }
 
-section.testimonials-section {
+.testimonials-section {
     padding-top: 200px;
     padding: 0 8%;
     padding-top: 100px;
     padding-bottom: 300px;
 }
 
-section.testimonials-section .testimonial-titles h3 {
+.testimonials-section .testimonial-titles h3 {
     font-size: 22px;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -799,7 +822,7 @@ section.testimonials-section .testimonial-titles h3 {
     font-weight: 700;
 }
 
-section.testimonials-section .testimonial-titles h2 {
+.testimonials-section .testimonial-titles h2 {
     font-size: 54px;
     letter-spacing: 1px;
     color: #000;
@@ -814,12 +837,14 @@ section.testimonials-section .testimonial-titles h2 {
     flex-wrap: wrap;
 }
 
+
+
 .testimonials-img .testimonial-text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 565px;
-    height: 220px;
+    height: 500px;
     /* border: 1px solid #000; */
     gap: 35px;
     padding: 20px;
@@ -840,7 +865,7 @@ section.testimonials-section .testimonial-titles h2 {
 
 }
 @media(max-width:768px){
-    section.testimonials-section {
+    .testimonials-section {
         padding: 0;
         /* padding-left: 15px; */
     }
@@ -851,11 +876,14 @@ section.testimonials-section .testimonial-titles h2 {
         font-weight: 700;
 
     }
-  
+  .testimonials-img img{
+    min-width:50px;
+  }
 }
 
 
 .testimonial-button{
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
 }
@@ -883,6 +911,7 @@ section.testimonials-section .testimonial-titles h2 {
 }
 
 .testimonial-button-grups button {
+    
     width: 54px;
     height: 54px;
     background-color: #000;
@@ -890,10 +919,14 @@ section.testimonials-section .testimonial-titles h2 {
 }
 
 .testimonial-button-grups button img:nth-child(1) {
+
+
     width: 10px;
     height: 15px;
 
 }
+
+
 
 
 .faq-sector {
@@ -978,7 +1011,7 @@ section.testimonials-section .testimonial-titles h2 {
 
 footer {
     padding: 0 8%;
-    height: 750px;
+    height: auto;
     background: #000;
     color: #FFF;
 }
@@ -1035,6 +1068,11 @@ footer h2 span {
     padding-right: 5px;
 }
 
+.footer-side .footer-right-side{
+   
+    width: 440px;
+}
+
 .footer-right-side a {
     text-decoration: none;
     color: #FFF;
@@ -1042,6 +1080,8 @@ footer h2 span {
 }
 .footer-right-side ul  {
 list-style: none;
+width: 120px;
+
 
 }
 .footer-right-side ul li{
@@ -1060,7 +1100,7 @@ list-style: none;
 }
 
 footer .footer-span {
-    padding-top: 200px;
+    padding-top: 20px;
 }
 
 footer .footer-span span {
@@ -1099,17 +1139,17 @@ footer .footer-span span {
         color: #3C46FF;
     
     }
-    section.testimonials-section .testimonial-titles h2{
+    .testimonials-section .testimonial-titles h2{
         font-size: 24px;
         padding-left: 10px;
     }
-    section.testimonials-section .testimonial-titles h3{
+    .testimonials-section .testimonial-titles h3{
         font-size: 18px;
         padding-left: 10px;
     }
     
 
-section.education-work{
+.education-work{
     padding: 0;
 }
 
@@ -1128,4 +1168,10 @@ section.education-work{
     section.projects .project-box{
         flex-wrap: wrap;
     }
+}
+ 
+
+
+.education-work {
+    display: flex;
 }
